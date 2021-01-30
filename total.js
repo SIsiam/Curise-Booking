@@ -1,3 +1,5 @@
+// step-1 first class ticket 
+
 
 // First-class ticket price count With Event ID And Event 
 
@@ -70,7 +72,7 @@ function firstClassTicket(isIncrease) {
 
 */
 
-
+// step-2 EconomyTicket 
 
 
 // Economy ticket price count With Event ID And Event
@@ -171,6 +173,7 @@ function handlerOfTicket(selectOfTicket, isIncrease) {
         economyTotal = 100 * ticketCount;
     }
 
+
     totalPrice();
 }
 
@@ -180,14 +183,14 @@ function handlerOfTicket(selectOfTicket, isIncrease) {
 
 // total Ticket Price
 /* 
-function total() {
-    const first = document.getElementById("first-input");
-    const num = parseInt(first.value);
+function totalPrice() {
+    const premiumClass = document.getElementById("first-input");
+    const inputNum1 = parseInt(premiumClass.value);
 
-    const eco = document.getElementById("second-input");
-    const num2 = parseInt(eco.value);
+    const midClass  = document.getElementById("second-input");
+    const inputNum2 = parseInt(midClass .value);
 
-    const totaLPrice = num * 150 + num2 * 100;
+    const totaLPrice = inputNum1 * 150 + inputNum2 * 100;
     document.getElementById("sub-total").innerText = "$" + totaLPrice;
     // console.log(totaLPrice);
 
@@ -213,7 +216,7 @@ function totalPrice() {
 
 
 
-    // This code Use Of Thank You Section When User Click Book   
+    // This code Use Of Thank You Section When User Click Book Now   
 
 
 
@@ -224,13 +227,10 @@ function totalPrice() {
 
     const economyTicket = midClass;
     const EconomyTotal = midClass * 100;
-    document.getElementById("second-class").innerText = "Your Economy ticket Is : " + economyTicket + ' = ' + "$" +  EconomyTotal;
+    document.getElementById("second-class").innerText = "Your Economy ticket Is : " + economyTicket + ' = ' + "$" + EconomyTotal;
 
-    document.getElementById("Tex").innerText = "Your ticket-VAT 10% : " + "$" + TexOfBd;
+    document.getElementById("Tex").innerText = "VAT 10% : " + "$" + TexOfBd;
     document.getElementById("Your-SubTotal").innerText = "Total Ticket Price  : " + "$" + grandTotal;
-
-
-
 
 
     const Book = document.getElementById("submit-btn");
@@ -239,14 +239,23 @@ function totalPrice() {
         if (grandTotal > 1) {
             const bookingArea = document.getElementById("booking-aria");
             bookingArea.style.display = "none";
-        }
 
-        const enter = document.getElementById("confirmation-aria");
-        enter.style.display = "block";
+            const enter = document.getElementById("confirmation-aria");
+            enter.style.display = "block";
+        }
 
     })
 
+    // validation Number cannot be set 0 
+
+    if (grandTotal == 0 ) {
+        alert("Invaild Number!  You Can't Set Zero.")
+        return false
+    }
+
 }
+
+
 
 // diffarent class ticket buy to  diffarent uses.  
 
@@ -255,8 +264,3 @@ function getValue(item) {
     const itemCount = parseInt(itemInfo.value);
     return itemCount;
 }
-
-// document.getElementById("")
-// if () {
-    
-// }

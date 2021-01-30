@@ -135,7 +135,7 @@ nav ul li a:hover, a.active{
     margin: auto;
     color: white;
     width: 55%;
-    height: 270px;
+    height: 210px;
     color: white;
     font-size: 30px;
     background: linear-gradient( 335.64deg,#ff589b -19.22%,#ff136f 118.87%);
@@ -154,25 +154,36 @@ nav ul li a:hover, a.active{
     background: linear-gradient( 335.64deg,#ff589b -19.22%,#ff136f 118.87%);
     margin: auto;
     padding: 10px;
-    width: 38%;
+    width: 85%;
     border-radius: 34px;
     padding: 15px;
     margin-bottom: 60px;
-
+}
+.name-highlight p {
+    margin-bottom: 15px;
 }
 .thank-style + h3 {
-    font-size: 20px;
-    margin: 10px;
-    color: #1cd8be;
+    font-size: 30px;
+    width: 85%;
+    border-radius: 20px;
+    margin: auto;
+    color: black;
+    background-color:#ff136f ;
 }
 
 
 button {
     background: linear-gradient(335.64deg,#ff589b -19.22%,#ff136f 118.87%);
-color: #fff;
-/* border: none */
+    color: #fff;
 }
-        
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(335.64deg,#e71f6f -19.22%,#ff1e74 118.87%);
+    color: #fff;
+}
+
+
 .button-style {
 color: white;
 padding: 10px;
