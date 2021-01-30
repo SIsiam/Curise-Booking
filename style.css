@@ -131,38 +131,22 @@ nav ul li a:hover, a.active{
     text-align: center;
     display: none;
 }
-.thank-style {
-    margin: auto;
-    color: white;
-    width: 55%;
-    height: 210px;
-    color: white;
-    font-size: 30px;
-    background: linear-gradient( 335.64deg,#ff589b -19.22%,#ff136f 118.87%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius : 25px;
-    padding: 30px;
-    line-height: 50px;
-    margin-bottom: 40px;
-}
+ 
 .name-highlight {
     color: white;
     font-size: 30px;
     background: linear-gradient( 335.64deg,#ff589b -19.22%,#ff136f 118.87%);
     margin: auto;
-    padding: 10px;
-    width: 85%;
-    border-radius: 34px;
+    width: 65%;
+    height: 360px;
+    border-radius: 30px;
     padding: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .name-highlight p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-.thank-style + h3 {
+.thanks-style{
     font-size: 30px;
     width: 85%;
     border-radius: 20px;
